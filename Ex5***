@@ -1,0 +1,66 @@
+/*Construa um programa que contenha dois vetores um do tipo int e outro do tipo float
+de 10 posição já inicializados (0 até 9). Após mostre os valores que se encontram
+dentro dos dois vetores. Faça esse procedimento utilizando ponteiros. */
+
+#include <stdio.h>
+
+int main()
+
+{
+int *p, **q;
+int V[10], i;
+float Y[10], j;
+
+
+
+for(i=0; i<10; i++)
+
+    {
+        *p=0;
+        *p=i;
+        V[i]=*p;
+
+    }
+
+
+
+
+    for(i=0; i<10; i++)
+
+    {
+        p=&V[i];
+        q=*p;
+
+
+
+    printf("%d\n", q);
+    }
+
+
+
+for(j=0; j<10; j++)
+    {
+
+    Y[j]=Y[j]+1;
+
+    }
+
+
+for(j=0; j<10; j++)
+
+    {
+        p=&Y[j];
+        q=*p;
+        
+    printf("%d\n", q);
+    }
+
+
+    getch();
+
+
+
+
+
+}
+
