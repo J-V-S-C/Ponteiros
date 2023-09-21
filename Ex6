@@ -1,0 +1,37 @@
+/* Implemente um programa C que leia 2 strings digitados pelo usuário e verifique se
+seus conteúdos são iguais. Este programa deve imprimir os strings digitados e uma
+mensagem dizendo que as strings são iguais ou diferentes.*/
+
+#include <stdio.h>
+#include <locale.h>
+main()
+
+{
+int i;
+char Str[20], Str2[20];
+
+setlocale(LC_ALL, "portuguese");
+
+
+printf("Digite uma string de no máximo 20 caracteres: ");
+
+scanf("%s", Str);
+
+printf("\nDigite outra string de no máximo 20 caracteres: ");
+
+scanf("%s", Str2);
+
+
+
+if (strcmp(Str, Str2)==0)
+{printf("A string: %s  e a outra string: %s  são iguais", Str, Str2);
+}
+
+    else
+        printf("A string: %s  e a outra string: %s  são diferentes", Str, Str2);
+}
+
+
+
+
+
