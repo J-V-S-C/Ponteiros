@@ -7,9 +7,10 @@ dentro dos dois vetores. Faça esse procedimento utilizando ponteiros. */
 int main()
 
 {
-int *p, **q;
-int V[10], i;
-float Y[10], j;
+int *p;
+float *q;
+int V[10], i, j;
+float Y[10];
 
 
 
@@ -29,34 +30,34 @@ for(i=0; i<10; i++)
 
     {
         p=&V[i];
-        q=*p;
 
-
-
-    printf("%d\n", q);
+    printf("%d ", *p);
     }
 
 
+printf("\n");
 
 for(j=0; j<10; j++)
     {
 
-    Y[j]=Y[j]+1;
-
+ Y[j]=j;
     }
 
 
 for(j=0; j<10; j++)
 
     {
-        p=&Y[j];
-        q=*p;
-        
-    printf("%d\n", q);
+
+    q=&Y[j];
+
+
+    printf("%.2f ", *q);
     }
 
 
-    getch();
+
+
+
 
 
 
